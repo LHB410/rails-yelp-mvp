@@ -3,6 +3,7 @@
 <%= render @restaurant %>
 
 <p><strong>Reviews</strong></p>
+<%= render 'reviews/new' %>
 <p><%= link_to "Add review", new_restaurant_review_path(@restaurant)  %></p>
 <ul class="list-group">
   <% @restaurant.reviews.each do |review| %>
